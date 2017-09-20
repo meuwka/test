@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 
 export default class Checkbox3 extends Component {
   handleClick = value => () => {
-    console.log('handleClick', value);
-    this.props.onChange(value);
+    this.props.onChangeCheckbox(value);
   };
 
   render() {
