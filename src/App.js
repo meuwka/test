@@ -29,6 +29,10 @@ function getRenderCheckbox3() {
 }
 
 class App extends Component {
+  componentWillMount() {
+    this.props.initialize({ name1: false })
+  }
+
   submit = data => {
     console.log(data);
   };
